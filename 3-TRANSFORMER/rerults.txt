@@ -1,0 +1,64 @@
+1)Balanced dataset
+
+vocab_size = 20
+embedding_dim = 8
+max_length = 4
+training_portion = .8
+maxlen=4
+embed_dim = 32  # Embedding size for each token
+num_heads = 2  # Number of attention heads
+ff_dim = 32 
+x = layers.Dropout(0.1)(x)
+x = layers.Dense(20, activation="relu")(x)
+x = layers.Dropout(0.1)(x)
+outputs = layers.Dense(2, activation="softmax")(x)
+model.compile(
+    optimizer="adam", loss="sparse_categorical_crossentropy",metrics=["accuracy",precision_m,recall_m,f1_m])
+
+history = model.fit(
+    x_train, y_train, batch_size=32, epochs=10, validation_data=(x_val, y_val)
+
+
+
+- loss: 0.6291 
+- accuracy: 0.6251 
+- precision_m: 0.3754 
+- recall_m: 1.0000 
+- f1_m: 0.5409 
+
+
+- val_loss: 0.8881 
+- val_accuracy: 0.0000e+00 
+- val_precision_m: 1.0000 
+- val_recall_m: 1.0000 
+- val_f1_m: 1.0000
+
+**************************************************************************************************
+
+2)Full dataset
+- loss: 0.5224 
+- accuracy: 0.7670 
+- precision_m: 0.2331 
+- recall_m: 1.0000 
+- f1_m: 0.3753 
+
+
+- val_loss: 0.5251 
+- val_accuracy: 0.7630 
+- val_precision_m: 0.2355 
+- val_recall_m: 0.9701 
+- val_f1_m: 0.3667
+**************************************************************************************************
+funzione di attivazione tanh
+x = layers.Dense(20, activation="tanh")(x)
+- loss: 0.6308 
+- accuracy: 0.6231 
+- precision_m: 0.3752 
+- recall_m: 1.0000 
+- f1_m: 0.5405 
+
+- val_loss: 0.8163 
+- val_accuracy: 0.5003 
+- val_precision_m: 1.0000 
+- val_recall_m: 1.0000 
+- val_f1_m: 1.0000

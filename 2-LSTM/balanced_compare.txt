@@ -1,0 +1,39 @@
+loss: 0.5491
+ - binary_accuracy: 0.7627
+ - precision: 0.0000e+00
+ - recall: 0.0000e+00
+ - false_negatives: 3615.0000
+ - true_negatives: 11617.0000
+ - true_positives: 0.0000e+00
+ - false_positives: 0.0000e+00
+
+ - val_loss: 0.4965
+ - val_binary_accuracy: 0.8057
+ - val_precision: 0.0000e+00
+ - val_recall: 0.0000e+00
+ - val_false_negatives: 329.0000
+ - val_true_negatives: 1364.0000
+ - val_true_positives: 0.0000e+00
+ - val_false_positives: 0.0000e+00
+
+
+BALANCED:
+- loss: 0.6109 
+- binary_accuracy: 0.6934 
+- precision: 0.3824 
+- recall: 0.0060 
+- false_negatives: 2163.0000 
+- true_negatives: 4926.0000 
+- true_positives: 13.0000 
+- false_positives: 21.0000 
+
+F1=
+
+- val_loss: 1.1840 
+- val_binary_accuracy: 0.0000e+00 
+- val_precision: 0.0000e+00 
+- val_recall: 0.0000e+00 
+- val_false_negatives: 792.0000 
+- val_true_negatives: 0.0000e+00 
+- val_true_positives: 0.0000e+00 
+- val_false_positives: 0.0000e+00

@@ -1,0 +1,79 @@
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 21157 entries, 0 to 21156
+Data columns (total 25 columns):
+ #   Column                          Non-Null Count  Dtype  
+---  ------                          --------------  -----  
+ 0   Instance's Name                 21157 non-null  object 
+ 1   Seed                            21157 non-null  int64  
+ 2   Initial Solution                21157 non-null  object 
+ 3   OFIS                            21157 non-null  float64
+ 4   Moves                           21157 non-null  object 
+ 5   OFFS                            21157 non-null  float64
+ 6   OF_Diff                         21157 non-null  float64
+ 7   Exe_Time_d-r                    21157 non-null  float64
+ 8   Avg_Battery_Status              21157 non-null  float64
+ 9   Avg_SoC                         21157 non-null  float64
+ 10  Avg_Num_Charge                  21157 non-null  float64
+ 11  Avg_Vehicle_Capacity            21157 non-null  float64
+ 12  Avg_Customer_Demand             21157 non-null  float64
+ 13  Num_Vehicles                    21157 non-null  int64  
+ 14  Avg_Service_Time                21157 non-null  float64
+ 15  Avg_Customer_TimeWindow         21157 non-null  float64
+ 16  Var_Customer_TimeWindow         21157 non-null  float64
+ 17  Avg_Customer_customer_min_dist  21157 non-null  float64
+ 18  Var_Customer_customer_min_dist  21157 non-null  float64
+ 19  Avg_Customer_station_min_dist   21157 non-null  float64
+ 20  Var_Customer_station_min_dist   21157 non-null  float64
+ 21  Avg_Customer_deposit_dist       21157 non-null  float64
+ 22  Var_Customer_deposit_dist       21157 non-null  float64
+ 23  CounterD_R                      21157 non-null  object
+ 24  CounterD_Rlast                  21157 non-null  object
+dtypes: float64(18), int64(2), object(5)
+memory usage: 4.0+ MB
+None
+Numero di istanze: 21157
+               Seed          OFIS  ...  Avg_Customer_deposit_dist  Var_Customer_deposit_dist
+count  21157.000000  21157.000000  ...               21157.000000               21157.000000
+mean      80.648911  33075.694104  ...                  28.356946                 147.352838
+std       40.458631  19979.083466  ...                   1.144542                  24.305060
+min       42.000000   5529.155482  ...                  24.404460                  66.689913
+25%       42.000000  15598.182511  ...                  28.099610                 142.538837
+50%       42.000000  27213.110831  ...                  28.854812                 150.898820
+75%      123.000000  47458.480107  ...                  29.154982                 152.991814
+max      123.000000  85707.470860  ...                  29.309518                 200.611484
+
+[8 rows x 20 columns]
+Instance's Name                    object
+Seed                                int64
+Initial Solution                   object
+OFIS                              float64
+Moves                              object
+OFFS                              float64
+OF_Diff                           float64
+Exe_Time_d-r                      float64
+Avg_Battery_Status                float64
+Avg_SoC                           float64
+Avg_Num_Charge                    float64
+Avg_Vehicle_Capacity              float64
+Avg_Customer_Demand               float64
+Num_Vehicles                        int64
+Avg_Service_Time                  float64
+Avg_Customer_TimeWindow           float64
+Var_Customer_TimeWindow           float64
+Avg_Customer_customer_min_dist    float64
+Var_Customer_customer_min_dist    float64
+Avg_Customer_station_min_dist     float64
+Var_Customer_station_min_dist     float64
+Avg_Customer_deposit_dist         float64
+Var_Customer_deposit_dist         float64
+CounterD_R                         object
+CounterD_Rlast                     object
+dtype: object
+
+
+
+migliorate: 242
+non migliorate: 20915
+OF_DIFF positiva: 4947
+Single null beginning: 16960  Double null beginning: 16960  Middle null: 0  No null element: 4197
+Media: 4.0 Deviazione Standard: 0.0 Varianza: 0.0 Min: 4 Max: 4
