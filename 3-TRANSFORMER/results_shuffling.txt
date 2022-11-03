@@ -1,0 +1,28 @@
+input_1
+
+- loss: 0.5216 
+- accuracy: 0.7670 - precision_m: 0.2330 - recall_m: 1.0000 - f1_m: 0.3719
+- val_loss: 0.5275 
+- val_accuracy: 0.7630 - val_precision_m: 0.2364 - val_recall_m: 0.9398 - val_f1_m: 0.3616
+
+input_1_shuffled
+
+- loss: 0.5197 
+- accuracy: 0.7688 - precision_m: 0.2312 - recall_m: 1.0000 - f1_m: 0.3701 
+- val_loss: 0.5307 
+- val_accuracy: 0.7557 - val_precision_m: 0.2458 - val_recall_m: 1.0000 - val_f1_m: 0.3889
+
+
+input_1_balanced.csv
+
+-loss: 0.6297 
+- accuracy: 0.6250 - precision_m: 0.3745 - recall_m: 1.0000 - f1_m: 0.5396 
+- val_loss: 0.9837 
+- val_accuracy: 0.0000e+00 - val_precision_m: 1.0000 - val_recall_m: 1.0000 - val_f1_m: 1.0000
+
+
+input_1_balanced_shuffled.csv
+- loss: 0.6608 
+- accuracy: 0.6045 - precision_m: 0.4999 - recall_m: 1.0000 - f1_m: 0.6610 
+- val_loss: 0.6439 
+- val_accuracy: 0.6326 - val_precision_m: 0.5013 - val_recall_m: 1.0000 - val_f1_m: 0.6620

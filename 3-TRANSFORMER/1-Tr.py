@@ -80,7 +80,7 @@ class TokenAndPositionEmbedding(layers.Layer):
 moves_string=[]
 label=[]
 moves=[]
-with open("input_1_balanced.csv", 'r') as csvfile:
+with open("input_1_balanced_shuffled.csv", 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     next(reader)
     for row in reader:
@@ -90,7 +90,7 @@ for i in range (len(moves_string)):
     moves.append(moves_string[i].replace("[","").replace("]","").replace("\'","").split(","))
 
 
-vocab_size = 20
+vocab_size = 30
 embedding_dim = 8
 max_length = 4
 trunc_type = 'post'
