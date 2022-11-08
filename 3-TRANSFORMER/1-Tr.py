@@ -80,7 +80,7 @@ class TokenAndPositionEmbedding(layers.Layer):
 moves_string=[]
 label=[]
 moves=[]
-with open("input_1_balanced_shuffled.csv", 'r') as csvfile:
+with open("input_1_shuffled_balanced.csv", 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     next(reader)
     for row in reader:

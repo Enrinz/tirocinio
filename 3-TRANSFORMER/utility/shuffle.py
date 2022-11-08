@@ -1,6 +1,7 @@
 import random
 
-with open('input_1_balanced.csv', 'r') as r, open('input_1_balanced_shuffled.csv', 'w') as w:
+#open a file and shuffle it in a new file
+with open('input_1.csv', 'r') as r, open('input_1_shuffled.csv', 'w') as w:
     data = r.readlines()
     header, rows = data[0], data[1:]
     random.shuffle(rows)
