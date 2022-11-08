@@ -121,7 +121,7 @@ y_val=np.array(validation_label).astype(np.integer)
 
 
 embed_dim = 32  # Embedding size for each token
-num_heads = 2  # Number of attention heads
+num_heads = 4  # Number of attention heads
 ff_dim = 32  # Hidden layer size in feed forward network inside transformer
 
 inputs = layers.Input(shape=(maxlen,))

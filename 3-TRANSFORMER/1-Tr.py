@@ -80,7 +80,7 @@ class TokenAndPositionEmbedding(layers.Layer):
 moves_string=[]
 label=[]
 moves=[]
-with open("input_1_shuffled_balanced.csv", 'r') as csvfile:
+with open("inputs/input_1_balanced_shuffled.csv", 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     next(reader)
     for row in reader:
@@ -91,19 +91,19 @@ for i in range (len(moves_string)):
 
 
 vocab_size = 30
-embedding_dim = 8
+embedding_dim = 32
 max_length = 4
 trunc_type = 'post'
 padding_type = 'post'
 oov_tok = '<OOV>'
-training_portion = .8
+training_portion = 0.9
 maxlen=4
-
 
 #TRAINING moves and labels
 train_size = int(len(moves) * training_portion)
 train_moves = moves[0: train_size]
 train_label = label[0: train_size]
+
 
 tokenizer = Tokenizer(num_words = vocab_size, oov_token=oov_tok)
 tokenizer.fit_on_texts(train_moves)
@@ -139,7 +139,7 @@ outputs = layers.Dense(2, activation="softmax")(x)
 model = keras.Model(inputs=inputs, outputs=outputs)
 
 model.compile(
-    optimizer="adam", loss="sparse_categorical_crossentropy",metrics=["accuracy",precision_m,recall_m,f1_m])
+    optimizer="Adam", loss="sparse_categorical_crossentropy",metrics=["accuracy",precision_m,recall_m,f1_m])
 
 history = model.fit(
     x_train, y_train, batch_size=32, epochs=10, validation_data=(x_val, y_val)
