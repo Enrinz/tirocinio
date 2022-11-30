@@ -104,21 +104,24 @@ train_size = int(len(moves) * training_portion)
 train_moves = moves[0: train_size]
 train_label = label[0: train_size]
 
-
 tokenizer = Tokenizer(num_words = vocab_size, oov_token=oov_tok)
 tokenizer.fit_on_texts(train_moves)
+
 train_sequences = tokenizer.texts_to_sequences(train_moves)
 x_train = keras.preprocessing.sequence.pad_sequences(train_sequences, maxlen=maxlen)
 y_train = np.array(train_label).astype(np.integer)
+
+print(x_train,type(x_train),x_train[0],type(x_train[0]))
+
 
 #VALIDATION moves and labels
 validation_moves = moves[train_size:]
 validation_label = label[train_size:]
 
+#tokenizer.fit_on_texts(validation_moves)
 validation_sequences = tokenizer.texts_to_sequences(validation_moves)
 x_val= keras.preprocessing.sequence.pad_sequences(validation_sequences, maxlen=maxlen)
 y_val=np.array(validation_label).astype(np.integer)
-
 
 
 embed_dim = 32  # Embedding size for each token

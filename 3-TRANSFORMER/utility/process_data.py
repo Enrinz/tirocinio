@@ -45,7 +45,7 @@ validation_label = label[train_size:]
 validation_sequences = tokenizer.texts_to_sequences(validation_moves)
 x_val= keras.preprocessing.sequence.pad_sequences(validation_sequences, maxlen=maxlen)
 y_val=np.array(validation_label).astype(np.integer)
-
+############################################################################################
 count_train_1=0
 count_train_0=0
 for i in train_label:
