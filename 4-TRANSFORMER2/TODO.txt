@@ -1,0 +1,7 @@
+-Bilanciamento V
+-Test:
+    num_heads
+    ff_dim
+    funzione di attivazione
+    embed_dim
+    

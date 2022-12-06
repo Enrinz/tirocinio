@@ -1,4 +1,58 @@
-- loss: 0.4123 
-- accuracy: 0.8014 - precision_m: 0.2330 - recall_m: 0.9981 - f1_m: 0.3718 
-- val_loss: 0.6094 
-- val_accuracy: 0.6699 - val_precision_m: 0.2364 - val_recall_m: 0.9398 - val_f1_m: 0.3616
+full dataset (1-Trans.py,DB-Output.csv )
+initial solution + moves | come label OF_Diff positiva=1, 0 altrimenti
+tra tutte le epoche quella con val_accuracy più alta
+
+training_portion = 0.8
+
+epochs=30
+batch_size=32
+embed_dim=32
+embedding_dim=32
+
+- loss: 0.4270 
+    - accuracy: 0.7918 - precision_m: 0.2330 - recall_m: 1.0000 - f1_m: 0.3726 
+- val_loss: 0.5649 
+    - val_accuracy: 0.7500 - val_precision_m: 0.2364 - val_recall_m: 0.9398 - val_f1_m: 0.3616
+********************************************************************************************************
+
+training_portion = 0.8
+
+epochs=30
+batch_size=32
+embed_dim=64
+embedding_dim=64
+
+
+- loss: 0.4505 
+    - accuracy: 0.7788 - precision_m: 0.2330 - recall_m: 1.0000 - f1_m: 0.3723 
+- val_loss: 0.5372 
+    - val_accuracy: 0.7590 - val_precision_m: 0.2364 - val_recall_m: 0.9398 - val_f1_m: 0.3616
+
+##################################################################################################################################################################################################################
+balanced dataset (balance_dataset\1-Trans_balanced.py,balance_dataset\balanced.csv)
+
+training_portion = 0.8
+
+epochs=30
+batch_size=32
+embed_dim=32
+embedding_dim=32
+
+- loss: 0.5343 
+    - accuracy: 0.7210 - precision_m: 0.5172 - recall_m: 1.0000 - f1_m: 0.6779 
+- val_loss: 2.2749 
+    - val_accuracy: 0.5088 - val_precision_m: 0.4345 - val_recall_m: 0.6613 - val_f1_m: 0.5040
+
+********************************************************************************************************
+
+training_portion = 0.8
+
+epochs=30
+batch_size=32
+embed_dim=64
+embedding_dim=64
+
+- loss: 0.5231 
+    - accuracy: 0.7224 - precision_m: 0.5164 - recall_m: 1.0000 - f1_m: 0.6766 
+- val_loss: 2.8067 
+    - val_accuracy: 0.5093 - val_precision_m: 0.4345 - val_recall_m: 0.6613 - val_f1_m: 0.5040
