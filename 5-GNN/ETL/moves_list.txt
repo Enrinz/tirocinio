@@ -1,0 +1,3 @@
+'ShawDestroyCustomer', 'LongestWaitingTimeDestroyStation', 'DemandBasedDestroyCustomer', 'RandomRouteDestroyCustomer', 'GreedyDestroyCustomer', 'GreedyRouteRemoval', 'ProbabilisticWorstRemovalCustomer', 'null', 'ZoneDestroyCustomer', 'TimeBasedDestroyCustomer', 'ProximityBasedDestroyCustomer', 'WorstDistanceDestroyCustomer', 'RandomDestroyStation', 'ProbabilisticBestRepairStation', 'WorstTimeDestroyCustomer', 'DeterministicBestRepairStation', 'GreedyRepairCustomer'
+
+non ci sono nel dataset completo: 'ProbabilisticGreedyRepairCustomer'e 'ProbabilisticGreedyConfidenceRepairCustomer'

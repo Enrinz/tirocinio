@@ -8,6 +8,7 @@ df = pd.read_csv('DB-Output.csv')
 
 algorithms=df['Moves'].value_counts()
 algorithms_df=algorithms.to_frame()
+print(algorithms_df)
 print(algorithms_df.index[0])
 path='separete_alg\input_splitted\\'
 for i in range(len(algorithms_df)):
