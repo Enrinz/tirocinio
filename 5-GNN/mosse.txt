@@ -1,0 +1,17 @@
+WorstTimeDestroyCustomer   OK
+ZoneDestroyCustomer			OK
+GreedyRouteRemoval			OK
+LongestWaitingTimeDestroyStation  OK
+DeterministicBestRepairStation  OK
+GreedyDestroyCustomer		OK
+ProbabilisticBestRepairStation OK
+ShawDestroyCustomer    OK
+DemandBasedDestroyCustomer OK
+ProximityBasedDestroyCustomer  OK
+null     OK
+ProbabilisticWorstRemovalCustomer   OK
+GreedyRepairCustomer		OK
+WorstDistanceDestroyCustomer   OK
+RandomRouteDestroyCustomer  OK
+RandomDestroyStation   OK
+TimeBasedDestroyCustomer  OK
