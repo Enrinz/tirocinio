@@ -38,20 +38,21 @@ for filename in os.listdir(directory):
     for index,element in enumerate(df['OF_Diff']):
         if element>median_pos:
             much_improved.append(element)
-            label.append(5)
+            label.append(4)
         if element<=median_pos and element>0:
             little_improved.append(element)
-            label.append(4)
+            label.append(3)
+        if element==0:label.append(2)
         if element<median_neg:
             little_worse.append(element)
-            label.append(2)
+            label.append(1)
         if element>=median_neg and element<0:
             much_worse.append(element)
-            label.append(1)
-        if element==0:label.append(3)
-    #print(len(much_improved),len(little_improved),len(neutral),len(little_worse),len(much_worse))
+            label.append(0)
+        
+    print(len(much_improved),len(little_improved),len(neutral),len(little_worse),len(much_worse))
     name=filename.split(".")
-    dir_labels="5_labels\\"
+    dir_labels="5_labels_median\\"
     with open(dir_labels+name[0]+".txt", "a") as f:
         for i in label:
             f.write(str(i)+"\n")
